@@ -1,0 +1,34 @@
+[33mCMake Warning at CMakeLists.txt:122 (find_package):
+  By not providing "Findzed_msgs.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "zed_msgs",
+  but CMake did not find one.
+
+  Could not find a package configuration file provided by "zed_msgs" with any
+  of the following names:
+
+    zed_msgsConfig.cmake
+    zed_msgs-config.cmake
+
+  Add the installation prefix of "zed_msgs" to CMAKE_PREFIX_PATH or set
+  "zed_msgs_DIR" to a directory containing one of the above files.  If
+  "zed_msgs" provides a separate development package or SDK, be sure it has
+  been installed.
+
+[0m
+[31mCMake Error at CMakeLists.txt:139 (find_package):
+  By not providing "Findcob_srvs.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "cob_srvs",
+  but CMake did not find one.
+
+  Could not find a package configuration file provided by "cob_srvs" with any
+  of the following names:
+
+    cob_srvsConfig.cmake
+    cob_srvs-config.cmake
+
+  Add the installation prefix of "cob_srvs" to CMAKE_PREFIX_PATH or set
+  "cob_srvs_DIR" to a directory containing one of the above files.  If
+  "cob_srvs" provides a separate development package or SDK, be sure it has
+  been installed.
+
+[0m

@@ -1,3 +1,24 @@
 {
+<<<<<<< HEAD
     "ros.distro": "humble"
 }
+=======
+    "cmake.sourceDirectory": "/root/watcher_ws/src/description",
+    "urdf-visualizer.packages": {
+      "description": "${workspaceFolder}/src/description"
+},
+"[xml]": {
+    "editor.defaultFormatter": "redhat.vscode-xml"
+},
+"files.associations": {
+    "*.xacro": "xml",
+    "*.urdf": "xml"
+},
+"python.autoComplete.extraPaths": [
+    "/opt/ros/jazzy/lib/python3.12/site-packages"
+],
+"python.analysis.extraPaths": [
+    "/opt/ros/jazzy/lib/python3.12/site-packages"
+]
+}
+>>>>>>> 264600a1299cd2c3c7152c718112e19614a277e5

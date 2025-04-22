@@ -10,7 +10,7 @@ def generate_launch_description():
 
     watcher_model = DeclareLaunchArgument(
         name="watcher_model",
-        default_value=os.path.join(get_package_share_directory("description"), "urdf", "watcher.urdf.xacro"),
+        default_value=os.path.join(get_package_share_directory("robot_sim"), "urdf", "watcher.urdf.xacro"),
         description="Path to Watcher URDF File"
     )
 
@@ -32,7 +32,7 @@ def generate_launch_description():
         executable="rviz2",
         name="rviz2",
         output="screen",
-        arguments=["-d", os.path.join(get_package_share_directory("description"), "rviz", "config.rviz")]
+        arguments=["-d", os.path.join(get_package_share_directory("robot_sim"), "rviz", "config.rviz")]
     )
 
     return LaunchDescription([

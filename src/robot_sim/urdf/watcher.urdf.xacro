@@ -118,5 +118,34 @@
         </inertial>
     </link>
 
+    <gazebo>
+        <plugin name="diff_drive_controller" filename="libgazebo_ros_diff_drive.so">
+            <ros>
+                <namespace>/</namespace>
+                <remapping>cmd_vel:=/cmd_vel</remapping>
+                <remapping>odom:=/odom</remapping>
+            </ros>
+
+            <!-- Wheel configuration -->
+            <left_joint>left_wheel_joint</left_joint>
+            <right_joint>right_wheel_joint</right_joint>
+
+            <!-- Physical params -->
+            <wheel_separation>0.5588</wheel_separation>  <!-- distance between wheels -->
+            <wheel_radius>0.3175</wheel_radius>          <!-- radius of your wheel -->
+
+            <!-- Odometry settings -->
+            <publish_odom>true</publish_odom>
+            <publish_odom_tf>true</publish_odom_tf>
+            <odometry_frame>odom</odometry_frame>
+            <robot_base_frame>base_link</robot_base_frame>
+
+            <!-- Control tuning -->
+            <update_rate>50</update_rate>
+            <cmd_vel_topic>/cmd_vel</cmd_vel_topic>
+            <max_wheel_torque>10.0</max_wheel_torque>
+        </plugin>
+    </gazebo>
+    
 
 </robot>

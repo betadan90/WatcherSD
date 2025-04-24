@@ -1,2 +1,0 @@
-# WatcherSD
-Autonomous Navigation System.

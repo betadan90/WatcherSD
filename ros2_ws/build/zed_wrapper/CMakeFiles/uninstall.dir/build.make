@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/arcs/watcher/ros2_ws/src/zed-ros2-wrapper/zed_wrapper
+CMAKE_SOURCE_DIR = /home/arcs/Watcher2.0/WatcherSD/ros2_ws/src/zed-ros2-wrapper/zed_wrapper
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/arcs/watcher/ros2_ws/build/zed_wrapper
+CMAKE_BINARY_DIR = /home/arcs/Watcher2.0/WatcherSD/ros2_ws/build/zed_wrapper
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/arcs/watcher/ros2_ws/build/zed_wrapper && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/arcs/watcher/ros2_ws/src/zed-ros2-wrapper/zed_wrapper /home/arcs/watcher/ros2_ws/src/zed-ros2-wrapper/zed_wrapper /home/arcs/watcher/ros2_ws/build/zed_wrapper /home/arcs/watcher/ros2_ws/build/zed_wrapper /home/arcs/watcher/ros2_ws/build/zed_wrapper/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/arcs/Watcher2.0/WatcherSD/ros2_ws/build/zed_wrapper && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/arcs/Watcher2.0/WatcherSD/ros2_ws/src/zed-ros2-wrapper/zed_wrapper /home/arcs/Watcher2.0/WatcherSD/ros2_ws/src/zed-ros2-wrapper/zed_wrapper /home/arcs/Watcher2.0/WatcherSD/ros2_ws/build/zed_wrapper /home/arcs/Watcher2.0/WatcherSD/ros2_ws/build/zed_wrapper /home/arcs/Watcher2.0/WatcherSD/ros2_ws/build/zed_wrapper/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

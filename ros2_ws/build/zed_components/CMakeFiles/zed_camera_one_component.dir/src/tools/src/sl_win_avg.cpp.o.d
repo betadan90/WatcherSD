@@ -1,7 +1,7 @@
 CMakeFiles/zed_camera_one_component.dir/src/tools/src/sl_win_avg.cpp.o: \
- /home/arcs/watcher/ros2_ws/src/zed-ros2-wrapper/zed_components/src/tools/src/sl_win_avg.cpp \
+ /home/arcs/Watcher2.0/WatcherSD/ros2_ws/src/zed-ros2-wrapper/zed_components/src/tools/src/sl_win_avg.cpp \
  /usr/include/stdc-predef.h \
- /home/arcs/watcher/ros2_ws/src/zed-ros2-wrapper/zed_components/src/tools/include/sl_win_avg.hpp \
+ /home/arcs/Watcher2.0/WatcherSD/ros2_ws/src/zed-ros2-wrapper/zed_components/src/tools/include/sl_win_avg.hpp \
  /usr/include/c++/11/cstddef \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

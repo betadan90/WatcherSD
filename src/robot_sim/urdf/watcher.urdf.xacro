@@ -2,7 +2,11 @@
 
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="Watcher">
 
-    <link name="base_footprint"/>
+    <xacro:include filename="$(find robot_sim)/urdf/depth_camera.xacro" /> 
+    <!-- <xacro:include filename ="depth_camera.xacro"> -->
+
+
+    <link name="base_footprint"/> 
 
     <joint name="base_joint" type="fixed">
         <parent link="base_footprint"/>
@@ -331,5 +335,6 @@
     </gazebo>
     
 
-    <xacro:include filename="$(find robot_sim)/urdf/depth_camera.xacro" />
+    
+    <xacro:depth_camera parent="chair"/>
 </robot>

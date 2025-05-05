@@ -31,7 +31,7 @@
     <!--Added inertial tags HERE-->
         <inertial>
             <mass value="30.0"/>
-            <origin xyz="0 0 0.1778" rpy="0 0 0"/>
+            <origin xyz="0 0 0.1" rpy="0 0 0"/>
             <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>  
         </inertial>
     </link>
@@ -41,7 +41,8 @@
         <parent link="base_link"/>
         <child link="right_wheel"/>
         <axis xyz="0 1 0"/>
-        <origin rpy="0 0 0" xyz="0 0.24765 0.15875"/>
+        <origin rpy="0 0 0" xyz="0 0.24765 0.13"/><!--changed Z from 0.15875 & again from 0.127-->
+        <dynamics damping="0.5" friction="0.0"/>
     </joint>
 
     <link name="right_wheel">
@@ -87,7 +88,8 @@
         <parent link="base_link"/>
         <child link="left_wheel"/>
         <axis xyz="0 1 0"/>
-        <origin rpy="0 0 0" xyz="0 -0.24765 0.15875"/>
+        <origin rpy="0 0 0" xyz="0 -0.24765 0.127"/>
+        <dynamics damping="0.5" friction="0.0"/>
     </joint>
 
     <link name="left_wheel">
@@ -132,7 +134,7 @@
     <joint name="front_left_caster_joint" type="revolute">
         <parent link="base_link"/>
         <child link="front_left_caster"/>
-        <origin xyz="0.3429 0.24765 0.0762" rpy="0 0 0"/>
+        <origin xyz="0.3426 0.26265 0.05" rpy="0 0 0"/>
         <axis  xyz = "0 0 1"/>
         <limit effort = "1.0" velocity = "5.0" lower ="-3.14" upper = "3.14" />
         <dynamics damping = "0.2"/>
@@ -160,15 +162,15 @@
 
     <!--Friction for Left Caster wheel-->
     <gazebo reference="front_left_caster">
-        <mu1>0.01</mu1>
-        <mu2>0.01</mu2>
+        <mu1>0.001</mu1>
+        <mu2>0.001</mu2>
     </gazebo>
 
     <!--Front Right Caster Wheel-->
     <joint name="front_right_caster_joint" type="revolute">
         <parent link="base_link"/>
         <child link="front_right_caster"/>
-        <origin xyz="0.3429 -0.24765 0.0762" rpy="0 0 0"/>
+        <origin xyz="0.3426 -0.26265 0.05" rpy="0 0 0"/>
         <axis xyz = "0 0 1"/>
         <limit effort = "1.0" velocity = "5.0" lower ="-3.14" upper = "3.14" />
         <dynamics damping = "0.2"/>
@@ -196,8 +198,8 @@
 
     <!--Friction for front right Caster-->
     <gazebo reference="front_right_caster">
-        <mu1>0.1</mu1>
-        <mu2>0.1</mu2>
+        <mu1>0.001</mu1>
+        <mu2>0.001</mu2>
     </gazebo>
 
 
@@ -205,7 +207,7 @@
     <joint name="rear_left_caster_joint" type="revolute">
         <parent link="base_link"/>
         <child link="rear_left_caster"/>
-        <origin xyz="-0.4699 0.24765 0.0762" rpy="0 0 0"/>
+        <origin xyz="-0.4699 0.24765 0.05" rpy="0 0 0"/>
         <axis xyz = "0 0 1"/>
         <limit effort = "1.0" velocity = "5.0" lower ="-3.14" upper = "3.14" />
         <dynamics damping = "0.2"/>
@@ -233,8 +235,8 @@
 
     <!--Friction for Rear Left Caster-->
     <gazebo reference="rear_left_caster">
-        <mu1>0.1</mu1>
-        <mu2>0.1</mu2>
+        <mu1>0.001</mu1>
+        <mu2>0.001</mu2>
     </gazebo>
 
 
@@ -242,7 +244,7 @@
     <joint name="rear_right_caster_joint" type="revolute">
         <parent link="base_link"/>
         <child link="rear_right_caster"/>
-        <origin xyz="-0.4699 -0.24765 0.0762" rpy="0 0 0"/>
+        <origin xyz="-0.4699 -0.24765 0.05" rpy="0 0 0"/>
         <axis xyz = "0 0 1"/>
         <limit effort = "1.0" velocity = "5.0" lower ="-3.14" upper = "3.14" />
         <dynamics damping = "0.2"/>
@@ -269,8 +271,8 @@
     </link>
     <!--Friction for rear Right Caster-->
     <gazebo reference="rear_right_caster">
-        <mu1>0.1</mu1>
-        <mu2>0.1</mu2>
+        <mu1>0.001</mu1>
+        <mu2>0.001</mu2>
     </gazebo>
 
 

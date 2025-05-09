@@ -157,7 +157,7 @@ sudo apt install ros-humble-gazebo-plugins
 
 ---
 
-## 📝 Notes
+## Notes
 
 - The camera is modeled to match ZED Mini dimensions: `0.1245 × 0.0265 × 0.0305 m`
 - All caster joints are `revolute` for realistic pivoting

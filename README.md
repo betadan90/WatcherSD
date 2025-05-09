@@ -92,7 +92,7 @@ ros2 run teleop_twist_keyboard teleop_twist_keyboard
 ---
 
 ## Step 5: View in RViz2
-
+In a another **new terminal** enter the following to open RViz:
 ```bash
 rviz2
 ```

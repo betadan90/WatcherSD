@@ -42,7 +42,12 @@ WatcherProject/
 
 ---
 
-## Step 1: Build the Workspace
+## Step 1: Source your ROS2 installation and build the Workspace 
+
+```bash
+cd ~/WatcherProject/WatcherSD
+source /opt/ros/humble/setup.bash
+```
 
 ```bash
 cd ~/WatcherProject/WatcherSD

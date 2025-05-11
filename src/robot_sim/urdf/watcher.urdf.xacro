@@ -3,6 +3,7 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="Watcher">
 
     <xacro:include filename="$(find robot_sim)/urdf/depth_camera.xacro" /> 
+    <xacro:include filename="$(find robot_sim)/urdf/lidar.xacro" /> 
     <!-- <xacro:include filename ="depth_camera.xacro"> -->
 
 
@@ -339,4 +340,5 @@
 
     
     <xacro:depth_camera parent="chair"/>
+    <xacro:lidar_sensor parent="chair" />
 </robot>

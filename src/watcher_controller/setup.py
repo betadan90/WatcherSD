@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-package_name = 'controller'
+package_name = 'watcher_controller'
 
 setup(
     name=package_name,

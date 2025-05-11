@@ -2,6 +2,8 @@
 
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="Watcher">
 
+    <xacro:include filename="$(find robot_sim)/urdf/watcher_control.xacro"/>
+
     <xacro:include filename="$(find robot_sim)/urdf/depth_camera.xacro" /> 
     <!-- <xacro:include filename ="depth_camera.xacro"> -->
 
@@ -331,6 +333,10 @@
             <update_rate>50</update_rate>
             <cmd_vel_topic>/cmd_vel</cmd_vel_topic>
             <max_wheel_torque>200.0</max_wheel_torque>
+        </plugin>
+
+        <plugin filename="gz_ros2_control-system" name="gz_ros2_control::GazeboSimROS2ControlPlugin">
+            <parameters>$(find watcher_controller)/config/watcher_controllers.yaml</parameters>
         </plugin>
     </gazebo>
     

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+
+<robot name="Watcher" xmlns:xacro="http://ros.org/wiki/xacro">
+    <ros2_control name="WatcherController" type="system">
+        <hardware>
+            <plugin>gz_ros2_control/GazeboSimSystem</plugin>
+        </hardware>
+
+        <joint name="right_wheel_joint">
+            <command_interface name="velocity">
+                <param name="minimum">-1</param>
+                <param name="maximum">1</param>
+            </command_interface>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+
+        <joint name="left_wheel_joint">
+            <command_interface name="velocity">
+                <param name="minimum">-1</param>
+                <param name="maximum">1</param>
+            </command_interface>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+    </ros2_control>
+</robot>
